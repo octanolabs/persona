@@ -196,7 +196,7 @@ export function getPersona(address) {
       capable
     })
   }
-  const n = {
+  const nf = {
     first: firstName,
     second: secondName,
     family: familyName
@@ -206,10 +206,10 @@ export function getPersona(address) {
 
   return {
     sex: s,
-    name: n,
+    name: nf,
     skills: baseSkills,
-    childhood: parseBackstory(childhood, n, s),
-    adulthood: parseBackstory(adulthood, n, s),
+    childhood: parseBackstory(childhood, nf, s),
+    adulthood: parseBackstory(adulthood, nf, s),
     traits,
     incapableOf
   }
