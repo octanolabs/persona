@@ -1,0 +1,467 @@
+[
+  {
+    "id": 0,
+    "name": "Actor",
+    "desc": "{ PERSONA.NAME } travelled { PERSONA.POSSESSIVE } homeworld with a company of actors, playing to packed theatres and loving audiences everywhere. { PERSONA.SUBJECTIVE } was a perfectionist, and made { PERSONA.POSSESSIVE } own props and costumes rather than use the ones { PERSONA.SUBJECTIVE } was given.",
+    "mods": { "social": 8, "crafting": 3 },
+    "block": { "dumb-labor": true }
+  },
+  {
+    "id": 1,
+    "name": "Addiction counsel",
+    "desc": "After recovering from a joywire addiction, { PERSONA.NAME } adopted a non-violent way of life and vowed to help others. Travelling between communities, { PERSONA.SUBJECTIVE } used medicine, arts, and crafts to aid others who struggled with their own addictions.",
+    "mods": { "social": 8, "crafting": 3, "medical": 3, "artistic": 3 },
+    "block": null
+  },
+  {
+    "id": 2,
+    "name": "Adventurer",
+    "desc": "{ PERSONA.NAME }'s thirst for adventure took { PERSONA.OBJECTIVE } to many planets. { PERSONA.SUBJECTIVE } visited the brightest etherworlds and the darkest war-torn toxic planets in { PERSONA.POSSESSIVE } quest to find novelty and excitement. { PERSONA.SUBJECTIVE } worked as little as possible, often skirting ethical boundaries to make a quick buck. Among all jobs, { PERSONA.SUBJECTIVE } hated cooking the most.",
+    "mods": { "shooting": 3, "melee": 3, "social": 3, "crafting": 3, "medical": 3, "animals": 2 },
+    "block": { "cooking": true }
+  },
+  {
+    "id": 3,
+    "name": "Aerospace engineer",
+    "desc": "{ PERSONA.NAME } was an engineer responsible for the production of aircraft and spaceships. { PERSONA.SUBJECTIVE } focused on improving production lines, and was known for { PERSONA.POSSESSIVE } mastery of technical and research issues.",
+    "mods": { "shooting": 2, "mining": 2, "social": 2, "construction": 2, "intellectual": 7 },
+    "block": { "cleaning": true, "plants": true }
+  },
+  {
+    "id": 4,
+    "name": "AI programmer",
+    "desc": "{ PERSONA.NAME } enlisted in the military's robotics division, developing smarter combat AI. The whole time { PERSONA.SUBJECTIVE } was there, { PERSONA.SUBJECTIVE } never spoke with another human. { PERSONA.SUBJECTIVE } spent all { PERSONA.POSSESSIVE } time conversing with the AI { PERSONA.SUBJECTIVE } was developing.",
+    "mods": { "crafting": 6, "intellectual": 7 },
+    "block": { "plants": true }
+  },
+  {
+    "id": 5,
+    "name": "AI researcher",
+    "desc": "{ PERSONA.NAME } was a renowned researcher in artificial intelligence, robotics, and interactive holography. { PERSONA.POSSESSIVE } friendships with the artificial minds { PERSONA.SUBJECTIVE } created gave { PERSONA.OBJECTIVE } the confidence to interact with real people, and { PERSONA.SUBJECTIVE } soon excelled at personal communication.",
+    "mods": { "crafting": 1, "intellectual": 6, "mining": -2, "melee": -2, "social": 4 },
+    "block": { "dumb-labor": true }
+  },
+  {
+    "id": 6,
+    "name": "Alcoholic trucker",
+    "desc": "{ PERSONA.NAME } was a space trucker working for Sterk Industries when { PERSONA.SUBJECTIVE } killed his wife and daughter in a crash. { PERSONA.POSSESSIVE } body was repaired with an experimental nano-genetic therapy. Now { PERSONA.POSSESSIVE } muscles continually regenerate and harden, and every movement tears the tissue anew. { PERSONA.SUBJECTIVE } bears the pain in silence.",
+    "mods": { "shooting": 2, "mining": 4, "melee": 2 },
+    "block": { "intellectual": true, "caring": true, "social": true, "artistic": true, "cleaning": true}
+  },
+  {
+    "id": 7,
+    "name": "Anarchist rebel",
+    "desc": "After being abandoned on a special operation, { PERSONA.NAME } swore vengeance upon the state. { PERSONA.SUBJECTIVE } formed an anarchist group dedicated to bringing down core world governments.",
+    "mods": { "shooting": 6, "social": 6, "melee": 2 },
+    "block": { "crafting": true, "cleaning": true}
+  },
+  {
+    "id": 8,
+    "name": "Architect",
+    "desc": "{ PERSONA.NAME } designed and constructed buildings. On { PERSONA.POSSESSIVE } etherworld home, most of the technical aspects of architecture were handled by an AI. This enabled { PERSONA.OBJECTIVE } to push the artistic limits of the craft, but also meant { PERSONA.SUBJECTIVE } never had to get { PERSONA.POSSESSIVE } hands dirty at building sites.",
+    "mods": { "construction": 5, "artistic": 7, "crafting": -3 },
+    "block": { "dumb-labor": true }
+  },
+  {
+    "id": 9,
+    "name": "Aromatherapist",
+    "desc": "{ PERSONA.NAME } practiced aromatherapy, using essences extracted from home-grown plants.",
+    "mods": { "plants": 6, "shooting": -3, "cooking": 4, "melee": -3, "medical": 4 },
+    "block": null
+  },
+  {
+    "id": 10,
+    "name": "Artifact hunter",
+    "desc": "{ PERSONA.NAME } became depressed and lost interest in life. { PERSONA.SUBJECTIVE } travelled from planet to planet, searching for psychic artifacts amid mechanoid ruins in the hope that they would cure the pain in { PERSONA.POSSESSIVE } soul. A steady trigger finger and careful planning kept { PERSONA.NAME } alive.",
+    "mods": { "construction": 4, "shooting": 8 },
+    "block": { "social": true }
+  },
+  {
+    "id": 11,
+    "name": "Ascetic priest",
+    "desc": "After taking a vow of silence, { PERSONA.NAME } joined a monastery on a peaceful backwater planet to spend { PERSONA.POSSESSIVE } days in quiet contemplation. { PERSONA.SUBJECTIVE } found happiness growing vegetables in the garden and making cheese in the monastery cellars.",
+    "mods": { "plants": 4, "medical": 2, "cooking": 2 },
+    "block": { "violent": true, "social": true }
+  },
+  {
+    "id": 12,
+    "name": "Assassin",
+    "desc": "{ PERSONA.NAME } was a professional assassin. { PERSONA.SUBJECTIVE } was cold, calculating, and made a good profit. In this business, an utter lack of empathy was an asset.",
+    "mods": { "melee": 10, "shooting": 10 },
+    "block": {
+      "intellectual": true,
+      "dumb-labor": true,
+      "skilled-labor": true,
+      "social": true,
+      "caring": true
+    }
+  },
+  {
+    "id": 13,
+    "name": "Bandit leader",
+    "desc": "{ PERSONA.NAME } rose up the ranks of the crime organization, eventually becoming the leader of one of their most remote cells of bandits. { PERSONA.POSSESSIVE } dog Rest never left his side.",
+    "mods": { "shooting": 5, "melee": 5, "social": 2 },
+    "block": { "intellectual": true, "caring": true }
+  },
+  {
+    "id": 14,
+    "name": "Bartender",
+    "desc": "{ PERSONA.NAME } worked as a bartender on a seedy space station. The job entailed one part drink mixing, one part diplomacy, and one part head-bashing.",
+    "mods": { "social": 4, "melee": 2, "cooking": 2 },
+    "block": null
+  },
+  {
+    "id": 15,
+    "name": "Biosphere manager",
+    "desc": "{ PERSONA.NAME } lived on a peaceful etherworld where all menial work was done by robots and people devoted themselves to leisure. { PERSONA.SUBJECTIVE } managed the plant and animal life of a sprawling park, where citizens came to admire the natural beauty.",
+    "mods": { "shooting": -4, "animals": 6, "plants": 6 },
+    "block": {
+      "cooking": true,
+      "crafting": true,
+      "dumb-labor": true
+    }
+  },
+  {
+    "id": 16,
+    "name": "Blacksmith",
+    "desc": "As a smith on a medieval world, { PERSONA.NAME } gained a reputation for the high quality of { PERSONA.POSSESSIVE } work. { PERSONA.SUBJECTIVE } wasn't bad at using the swords { PERSONA.SUBJECTIVE } forged either.",
+    "mods": { "shooting": -5, "melee": 4, "crafting": 6 },
+    "block": { "intellectual": true }
+  },
+  {
+    "id": 17,
+    "name": "Bloody dentist",
+    "desc": "After studying at a famous college, { PERSONA.NAME }'s weak personality eventually snapped under the strain of angry administrators and whining patients. { PERSONA.SUBJECTIVE } went on a secret murder spree, killing many of those under { PERSONA.POSSESSIVE } care. After a pursuit, { PERSONA.SUBJECTIVE } managed to escape { PERSONA.POSSESSIVE } planet and travel to a new world.",
+    "mods": { "intellectual": 4, "medical": 6, "artistic": 2 },
+    "block": null
+  },
+  {
+    "id": 18,
+    "name": "Bodyguard",
+    "desc": "{ PERSONA.NAME } found work on a midworld, protecting whoever paid { PERSONA.OBJECTIVE } from harm. { PERSONA.SUBJECTIVE } gained proficiency in many different combat forms, and was known for { PERSONA.POSSESSIVE } ruthlessness against those who crossed { PERSONA.OBJECTIVE }.",
+    "mods": { "shooting": 4, "melee": 4 },
+    "block": { "social": true }
+  },
+  {
+    "id": 19,
+    "name": "Bounty hunter",
+    "desc": "{ PERSONA.NAME } is a self-employed bounty hunter. { PERSONA.SUBJECTIVE } spent { PERSONA.POSSESSIVE } days hunting space pirates and collecting cash bounties.",
+    "mods": { "shooting": 6, "melee": 4, "medical": 2 },
+    "block": { "cleaning": true }
+  },
+  {
+    "id": 20,
+    "name": "Bounty hunter",
+    "desc": "{ PERSONA.NAME } was a bounty hunter on a massive etherworld. { PERSONA.SUBJECTIVE } worked sensitive assignments for extremely wealthy clients, and was known for quiet execution and total discretion.",
+    "mods": { "shooting": 8, "melee": 5 },
+    "block": null
+  },
+  {
+    "id": 21,
+    "name": "Bounty hunter",
+    "desc": "When the civil war ended, { PERSONA.NAME } had to find a new way to use { PERSONA.POSSESSIVE } fighting skills. { PERSONA.SUBJECTIVE } decided to hunt down war criminals and soon realized that { PERSONA.SUBJECTIVE } enjoyed capturing bad guys by any means necessary.",
+    "mods": { "shooting": 5, "melee": 3, "social": 2, "crafting": 2 },
+    "block": null
+  },
+  {
+    "id": 22,
+    "name": "Business gangster",
+    "desc": "Staying one step ahead of the law, { PERSONA.NAME } became a legitimate businessman and silenced anyone who dared say otherwise. As proprietor of brothels, speakeasies and eateries, { PERSONA.NAME }'s good fortune continued while { PERSONA.POSSESSIVE } competition suffered a series of unfortunate and unexplained accidents.",
+    "mods": { "shooting": 3, "melee": 5, "social": 7, "artistic": 2 },
+    "block": { "cleaning": true,  "caring": true, "plants": true}
+  },
+  {
+    "id": 23,
+    "name": "Caravaneer",
+    "desc": "{ PERSONA.NAME } was the leader of a caravan. { PERSONA.SUBJECTIVE } was responsible for the safety of { PERSONA.POSSESSIVE } caravan and was the head negotiator in countless trade deals. { PERSONA.SUBJECTIVE } and { PERSONA.POSSESSIVE } people prospered, but their wealth made them a target for brigands. They often had to take up arms to fend off bandits and highwaymen.",
+    "mods": { "shooting": 4, "social": 7 },
+    "block": null
+  },
+  {
+    "id": 24,
+    "name": "Cargo pilot",
+    "desc": "{ PERSONA.NAME } was trained by cargo hands on a long-haul ore transport ship. { PERSONA.SUBJECTIVE } perfected { PERSONA.POSSESSIVE } skills at trading and manipulation of people while running weapons between systems.",
+    "mods": { "construction": 2, "mining": 1, "shooting": 4, "melee": 2, "social": 7 },
+    "block": { "cleaning": true,  "cooking": true }
+  },
+  {
+    "id": 25,
+    "name": "Castaway",
+    "desc": "{ PERSONA.NAME } was the only survivor of a ship crash on an unhabited animal world. For many years until { PERSONA.POSSESSIVE } rescue { PERSONA.SUBJECTIVE } scrounged an existence out of whatever { PERSONA.SUBJECTIVE } could find. { PERSONA.POSSESSIVE } survival skills became razor-sharp, but spending so long alone severely dampened { PERSONA.POSSESSIVE } conversatial abilities.",
+    "mods": { "animals": 3, "melee": 5, "construction": 4 },
+    "block": { "social": true, "intellectual": true, "artistic": true }
+  },
+  {
+    "id": 26,
+    "name": "Cave tender",
+    "desc": "While the others were out hunting and foraging, { PERSONA.NAME } would stay at home to cook and take care of the young and sick.",
+    "mods": { "cooking": 4, "medical": 3, "crafting": 2 },
+    "block": null
+  },
+  {
+    "id": 27,
+    "name": "Caveworld illuminator",
+    "desc": "Among tunnel-dwellers, those with vision as strong as { PERSONA.NAME }’s are revered as sages. { PERSONA.SUBJECTIVE } would lead the way, marking spots to dig with bioluminescent fungus and warning others of impending danger.",
+    "mods": { "mining": 3, "social": 2 },
+    "block": null
+  },
+  {
+    "id": 28,
+    "name": "Charity worker",
+    "desc": "Etherworlds are havens of safety and comfort for those lucky enough to live there, but { PERSONA.NAME } could not ignore nearby planets where people suffered in poverty. { PERSONA.SUBJECTIVE } spent { PERSONA.POSSESSIVE } working life appealing for donations and supporting those in need.",
+    "mods": { "mining": -3, "social": 6 },
+    "block": { "violent": true }
+  },
+  {
+    "id": 29,
+    "name": "Chemist",
+    "desc": "{ PERSONA.NAME } was a renowned chemist on a thriving midworld. After performing inhumane experiments that turned men into beasts, { PERSONA.SUBJECTIVE } was arrested and banished to a far-off bitworld.",
+    "mods": { "intellectual": 6, "social": -3, "crafting": 6 },
+    "block": { "caring": true }
+  },
+  {
+    "id": 30,
+    "name": "Chemist",
+    "desc": "{ PERSONA.NAME } was a research chemist. { PERSONA.SUBJECTIVE } worked with chemicals, from pharmaceuticals to explosives, to develop new substances and treatments.",
+    "mods": { "intellectual": 6, "social": 2, "medical": 2 },
+    "block": null
+  },
+  {
+    "id": 31,
+    "name": "Chief engineer",
+    "desc": "As chief engineer on board a large spaceship, { PERSONA.NAME } was an expert in all things fiddly and complex. { PERSONA.SUBJECTIVE } relied on other members of the crew for some of the basic necessities of life. { PERSONA.SUBJECTIVE } and { PERSONA.POSSESSIVE } ship eventually disappeared into a longsleep voyage of exploration.",
+    "mods": { "intellectual": 3, "construction": 3, "mining": 2, "social": -2, "crafting": 3 },
+    "block": { "animals": true }
+  },
+  {
+    "id": 32,
+    "name": "Civil engineer",
+    "desc": "{ PERSONA.NAME } was a well-known civil engineer. { PERSONA.POSSESSIVE } job involved designing and maintaining rock fortification structures. { PERSONA.SUBJECTIVE } did enough statistical analysis to keep { PERSONA.POSSESSIVE } mind sharp.",
+    "mods": { "intellectual": 3, "construction": 7, "mining": 2, "social": -3 },
+    "block": null
+  },
+  {
+    "id": 33,
+    "name": "Civil servant",
+    "desc": "{ PERSONA.NAME } worked as a low-ranking administrator for a moribund government bureaucracy. { PERSONA.SUBJECTIVE } is most at home filling out complicated paperwork and playing office politics.",
+    "mods": { "intellectual": 3, "social": 3, "construction": -2 },
+    "block": null
+  },
+  {
+    "id": 34,
+    "name": "Clan chief",
+    "desc": "{ PERSONA.NAME } managed a small criminal clan on an outlying trade hub world.",
+    "mods": { "shooting": 6, "social": 7 },
+    "block": { "caring": true }
+  },
+  {
+    "id": 35,
+    "name": "Colonial governor",
+    "desc": "Disillusioned by rampant government corruption, { PERSONA.NAME } ran for governor and won. However, the local gangs and their pet officials soon forced { PERSONA.OBJECTIVE } out of power. { PERSONA.SUBJECTIVE } left the community to return to his life as a marshal.",
+    "mods": { "shooting": 1, "social": 6, "construction": 3 },
+    "block": null
+  },
+  {
+    "id": 36,
+    "name": "Colony settler",
+    "desc": "{ PERSONA.NAME } was a settler on a new colony world. Such a life requires a jack-of-all trades at basic hands-on tasks.",
+    "mods": { "mining": 4, "plants": 4, "construction": 4 },
+    "block": null
+  },
+  {
+    "id": 37,
+    "name": "Combat engineer",
+    "desc": "{ PERSONA.NAME } became a combat engineer. { PERSONA.SUBJECTIVE } built bases, fixed guns, and repaired vehicles for the army - when { PERSONA.SUBJECTIVE } wasn't shooting at people, that is.",
+    "mods": { "crafting": 3, "shooting": 5, "construction": 2 },
+    "block": null
+  },
+  {
+    "id": 38,
+    "name": "Combat medic",
+    "desc": "After his home country entered a large-scale war, { PERSONA.NAME } was drafted into the army as a combat medic. { PERSONA.POSSESSIVE } few years in the trenches trying to keep { PERSONA.POSSESSIVE } fellow soldiers alive gave { PERSONA.OBJECTIVE } an acute sense for first aid. Losing many friend has made { PERSONA.OBJECTIVE } stoic and reserved.",
+    "mods": { "melee": 1, "shooting": 2, "medical": 6, "artistic": -2 },
+    "block": { "social": true }
+  },
+  {
+    "id": 39,
+    "name": "Con artist",
+    "desc": "{ PERSONA.NAME } never created anything in { PERSONA.POSSESSIVE } life. { PERSONA.SUBJECTIVE } did, however, prove to be a natural at getting others to give { PERSONA.OBJECTIVE } what they had created.",
+    "mods": { "social": 10 },
+    "block": { "violent": true }
+  },
+  {
+    "id": 40,
+    "name": "Conceptual artist",
+    "desc": "{ PERSONA.NAME } was well-known in art circles on { PERSONA.POSSESSIVE } home world for { PERSONA.POSSESSIVE } unique and creative conceptual artworks. Nobody was sure exactly what { PERSONA.SUBJECTIVE } was trying to communicate, but { PERSONA.POSSESSIVE } pieces were highly valued by collectors.",
+    "mods": { "artistic": 8, "crafting": 1 },
+    "block": { "social": true, "caring": true, "hauling": true }
+  },
+  {
+    "id": 41,
+    "name": "Corp researcher",
+    "desc": "{ PERSONA.NAME } was a leading researcher for a massive space exploration corporation.",
+    "mods": { "intellectual": 8, "social": 3, "cooking": -2, "medical": 6, "crafting": 3 },
+    "block": null
+  },
+  {
+    "id": 42,
+    "name": "Corp researcher",
+    "desc": "{ PERSONA.NAME } was sold to a corporation and put to work as a corporate slave doing scientific research. Unable to adapt to the social politics of { PERSONA.POSSESSIVE } workplace, { PERSONA.SUBJECTIVE } buried { PERSONA.OBJECTIVE }self in his work and failed to progress up the corporate ladder. Every day, { PERSONA.SUBJECTIVE } yearned to be left alone.",
+    "mods": { "intellectual": 8, "shooting": -3, "melee": -3, "medical": 4, "crafting": 4 },
+    "block": { "social": true }
+  },
+  {
+    "id": 43,
+    "name": "Crime lord",
+    "desc": "Through brutality and cruelty, { PERSONA.NAME } rose to the rank of crime lord. { PERSONA.SUBJECTIVE } relied less on { PERSONA.POSSESSIVE } fists and more on { PERSONA.POSSESSIVE } guns. { PERSONA.POSSESSIVE } reputation spread faster due to { PERSONA.POSSESSIVE } cold-bloodedness and ruthless methods.",
+    "mods": { "intellectual": 2, "shooting": 6, "melee": 2, "social": 3 },
+    "block": { "caring": true, "artistic": true, "cleaning": true }
+  },
+  {
+    "id": 44,
+    "name": "Criminal kingpin",
+    "desc": "{ PERSONA.NAME } discovered { PERSONA.POSSESSIVE } gift - people did what { PERSONA.SUBJECTIVE } said, when { PERSONA.SUBJECTIVE } said it. Taking advantage of this, { PERSONA.SUBJECTIVE } set off for the bitworld planets to make a name for { PERSONA.OBJECTIVE }self in the criminal underworld.",
+    "mods": { "shooting": 2, "melee": 2, "social": 5 },
+    "block": { "dumb-labor": true }
+  },
+  {
+    "id": 45,
+    "name": "Criminal surgeon",
+    "desc": "Being near many injured fellow criminals, { PERSONA.NAME } took it upon { PERSONA.OBJECTIVE }self to work on them. Although many people died, { PERSONA.SUBJECTIVE } did get better at using knives.",
+    "mods": { "intellectual": -3, "melee": 6, "social": -2, "medical": 5, "artistic": 1 },
+    "block": null
+  },
+  {
+    "id": 46,
+    "name": "Deep space surveyor",
+    "desc": "{ PERSONA.NAME } was a deep space surveyor. { PERSONA.SUBJECTIVE } studied which worlds were the most suitable for colonization. { PERSONA.POSSESSIVE } expeditions were met by hostile natives, green-painted space-women, and wannabe Greek gods. Surviving many firefights, { PERSONA.SUBJECTIVE } learned to build rudimentary lathes and rock cannons to fend off enemies.",
+    "mods": { "intellectual": 6, "construction": 4, "social": 2, "plants": -3, "shooting": 4 },
+    "block": null
+  },
+  {
+    "id": 47,
+    "name": "Defense lawyer",
+    "desc": "{ PERSONA.NAME } found that { PERSONA.SUBJECTIVE } could make more money with a quick word than a blaster. Seeking a job where { PERSONA.POSSESSIVE } silver tongue could be useful, { PERSONA.SUBJECTIVE } turned to the law.",
+    "mods": { "intellectual": 8, "shooting": -3, "melee": -3, "medical": 4, "crafting": 4 },
+    "block": { "social": true }
+  },
+  {
+    "id": 48,
+    "name": "Dreaded one",
+    "desc": "Some followers say that { PERSONA.NAME } and { PERSONA.POSSESSIVE } crew of misfits found the Fountain of Youth, many, many centuries ago, and that they caused the extinction of the dinosaurs on many planets. There's even a religion about them, somewhere, involving noodles and meatballs.",
+    "mods": { "intellectual": 6, "mining": -3, "artistic": 8, "medical": 2, "crafting": 4 },
+    "block": { "cleaning": true }
+  },
+  {
+    "id": 49,
+    "name": "Exotic chef",
+    "desc": "{ PERSONA.NAME } has always gone overboard when it comes to food. { PERSONA.SUBJECTIVE } is always seeking new and exotic ingredients. { PERSONA.POSSESSIVE } quest for ingredients has brought { PERSONA.OBJECTIVE } into some close calls with local flora and fauna.",
+    "mods": { "cooking": 6, "artistic": 2, "crafting": 3 },
+    "block": null
+  },
+  {
+    "id": 50,
+    "name": "Expert handyman",
+    "desc": "{ PERSONA.NAME } worked as a traveling engineer. { PERSONA.SUBJECTIVE } fixed things ranging from a simple communications array to the intricate software harness in { PERSONA.POSSESSIVE } ship's AI meta-core. Nothing is beyond repair for { PERSONA.OBJECTIVE }.",
+    "mods": { "construction": 7, "intellectual": 4, "crafting": 3 },
+    "block": null
+  },
+  {
+    "id": 51,
+    "name": "Explorer",
+    "desc": "{ PERSONA.NAME } traveled from planet to planet, gathering samples, stories, and research. { PERSONA.SUBJECTIVE } hoped one day to compile a record of every animal, plant, mineral, and machine and device in known space: The Complete Traveler's Guide to the Bitworlds.",
+    "mods": { "mining": 3, "intellectual": 3, "crafting": 3, "shooting": 2, "melee": 2 },
+    "block": null
+  },
+  {
+    "id": 52,
+    "name": "Government agent",
+    "desc": "{ PERSONA.NAME } worked for the government against rebel groups and excelled in this capacity. During { PERSONA.POSSESSIVE } training { PERSONA.SUBJECTIVE } was taught firearms, melee combat and medical skills.",
+    "mods": { "medicial": 3, "shooting": 4, "melee": 4 },
+    "block": null
+  },
+  {
+    "id": 53,
+    "name": "Gun dealer",
+    "desc": "{ PERSONA.NAME } traded high-tech firearms between warring factions. Over time, { PERSONA.SUBJECTIVE } became very skilled at conducting product demonstrations and negotiating profitable deals.",
+    "mods": { "shooting": 4, "social": 8 },
+    "block": null
+  },
+  {
+    "id": 54,
+    "name": "Information broker",
+    "desc": "{ PERSONA.NAME } caught a ship to the next star system and began a life of travel and learning, quickly collecting a massive bank of knowledge from people of all shapes and sizes. { PERSONA.SUBJECTIVE } learned to sell this knowledge for great profit, and became a powerful broker of information.",
+    "mods": { "shooting": -1, "social": 5, "melee": -2, "intellectual": 4 },
+    "block": null
+  },
+  {
+    "id": 55,
+    "name": "Language analyst",
+    "desc": "After war broke out on { PERSONA.POSSESSIVE } homeworld, { PERSONA.NAME } was conscripted as a linguist. { PERSONA.SUBJECTIVE } spent { PERSONA.POSSESSIVE } days in a space station, decoding enemy communications and tending the hydroponic crops.",
+    "mods": { "plants": 4, "intellectual": 8 },
+    "block": null
+  },
+  {
+    "id": 56,
+    "name": "Neuro scientist",
+    "desc": "{ PERSONA.NAME } worked for a long time to improve the world's understanding of the human brain.",
+    "mods": { "plants": 4, "intellectual": 8 },
+    "block": null
+  },
+  {
+    "id": 57,
+    "name": "Particle physicist",
+    "desc": "{ PERSONA.NAME } performed cutting-edge physics research. { PERSONA.SUBJECTIVE } wanted to help build a better and more peaceful future.",
+    "mods": { "plants": 2, "intellectual": 8, "medicial": 3, "artistic": 3 },
+    "block": null
+  },
+  {
+    "id": 58,
+    "name": "Philosopher",
+    "desc": "{ PERSONA.NAME }'s thirst for archaeo-technological knowledge drove { PERSONA.OBJECTIVE } to spend years surveying abandoned data centers and studying ancient coding languages. { PERSONA.SUBJECTIVE } claimed to be one of the few who could piece together the tragedy of the past - and offer a path to the future.",
+    "mods": { "social": 2, "intellectual": 4, "medicial": 3, "crafting": 2 },
+    "block": null
+  },
+  {
+    "id": 59,
+    "name": "Pirate captain",
+    "desc": "{ PERSONA.NAME } worked { PERSONA.POSSESSIVE } way up through the ranks of a pirate ship, eventually becoming captain. { PERSONA.SUBJECTIVE } leads his crew between worlds, making a name to remember.",
+    "mods": { "social": 6, "shooting": 5, "melee": 5 },
+    "block": null
+  },
+  {
+    "id": 60,
+    "name": "Reporter",
+    "desc": "{ PERSONA.NAME } spent many years as an investigative reporter. { PERSONA.SUBJECTIVE } was notorious for making chaotic reports from exotic locations. Although seen as a lightweight by { PERSONA.POSSESSIVE } critics, { PERSONA.SUBJECTIVE } managed to break several high-profile stories after lengthy investigations.",
+    "mods": { "social": 4, "intellectual": 2, "artistic": 3 },
+    "block": null
+  },
+  {
+    "id": 61,
+    "name": "Serial killer",
+    "desc": "{ PERSONA.NAME } started to enjoy killing people, so { PERSONA.SUBJECTIVE } did more often and perfected { PERSONA.POSSESSIVE } methods. { PERSONA.SUBJECTIVE } lurked in the darkest streets, stalking prey for hours. { PERSONA.SUBJECTIVE } enjoyed making artworks of { PERSONA.POSSESSIVE } victims, and was known for leaving { PERSONA.POSSESSIVE } signature on the bodies of those { PERSONA.SUBJECTIVE } killed.",
+    "mods": { "shooting": 4, "melee": 4, "artistic": 4 },
+    "block": { "animals" : true}
+  },
+  {
+    "id": 61,
+    "name": "Smuggler",
+    "desc": "As a contract pilot, { PERSONA.NAME } had a knack for stealing goods and trafficking contraband without getting caught. { PERSONA.SUBJECTIVE } eventually saved up enough to buy { PERSONA.POSSESSIVE } own ship, and used it to travel from world to world dealing { PERSONA.POSSESSIVE } goods in person.",
+    "mods": { "shooting": 2, "melee": 2, "intellectual": -2, "medical": 2, "social": 5 },
+    "block": { "artistic" : true}
+  },
+  {
+    "id": 62,
+    "name": "Spy",
+    "desc": "{ PERSONA.NAME } was trained by { PERSONA.POSSESSIVE } government in infiltration and espionage. { PERSONA.SUBJECTIVE } learned to keep a cool head and to talk { PERSONA.POSSESSIVE } way out of tight situations. When talking didn't work, { PERSONA.SUBJECTIVE } was capable of more violent direct action.",
+    "mods": { "shooting": 2, "melee": 2, "social": 7 },
+    "block": null
+  },
+  {
+    "id": 63,
+    "name": "Unstable butcher",
+    "desc": "{ PERSONA.NAME } began hearing voices. The animals were talking to { PERSONA.OBJECTIVE }, insulting { PERSONA.OBJECTIVE }. { PERSONA.SUBJECTIVE } came to hate them, and eventually killed { PERSONA.POSSESSIVE } furry former friends. { PERSONA.SUBJECTIVE } started selling the meat just to get human interaction.",
+    "mods": { "construction": 4, "intellectual": -4, "mining": 3, "melee": 6, "social": 2, "medical": -3 },
+    "block": null
+  }
+]

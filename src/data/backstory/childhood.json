@@ -1,0 +1,450 @@
+[
+  {
+    "id": 0,
+    "name": "Abandoned child",
+    "desc": "{ PERSONA.NAME } was born sickly. Thinking that { PERSONA.SUBJECTIVE } would only burden the community, { PERSONA.POSSESSIVE } parents left { PERSONA.OBJECTIVE } out in the elements. Somehow, { PERSONA.SUBJECTIVE } survived.",
+    "mods": { "social": -2, "melee": 3, "crafting": 3 },
+    "block": null
+  },
+  {
+    "id": 1,
+    "name": "Abandoned child",
+    "desc": "{ PERSONA.NAME } was a quick witted, funny child. One day, { PERSONA.SUBJECTIVE } wandered off on { PERSONA.POSSESSIVE } wealthy genetic parents, and was ultimately lost in a supposedly unused ore warehouse. Due to cloning technology, { PERSONA.POSSESSIVE } parents decided that the time looking for { PERSONA.OBJECTIVE } was better spent on just cloning a better child.",
+    "mods": { "construction": 1, "melee": 1, "social": 1, "shooting": 1 },
+    "block": { "cooking": true, "cleaning": true}
+  },
+  {
+    "id": 2,
+    "name": "Abandoned orphan",
+    "desc": "Abandoned at birth, young { PERSONA.NAME } started { PERSONA.POSSESSIVE } life in an orphanage. A rascal and a scoundrel, { PERSONA.SUBJECTIVE } became a clever troublemaker.",
+    "mods": { "plants": -3, "melee": 3, "social": 2, "shooting": 2 },
+    "block": null
+  },
+  {
+    "id": 3,
+    "name": "Abductee",
+    "desc": "{ PERSONA.NAME } was abducted at a young age and forced to do menial labor on a yeild farm.",
+    "mods": { "construction": 2, "melee": 2, "cooking": 2, "crafting": 2 },
+    "block": null
+  },
+  {
+    "id": 4,
+    "name": "Abductee",
+    "desc": "{ PERSONA.NAME } was abducted by Bitcoin maximalists when { PERSONA.SUBJECTIVE } was still a baby. They experimented on { PERSONA.OBJECTIVE } to understand his genetic structure. As { PERSONA.SUBJECTIVE } grew up, { PERSONA.NAME } grew a little bit too big and strong for his captors and eventually escaped.",
+    "mods": { "construction": 2, "melee": 4, "mining": 4, "social": -2 },
+    "block": { "intellectual": true }
+  },
+  {
+    "id": 5,
+    "name": "Academy student",
+    "desc": "{ PERSONA.NAME } went to school like a good space cadet would. { PERSONA.SUBJECTIVE } was very tall and was known for { PERSONA.POSESSIVE } good looks. Though { PERSONA.SUBJECTIVE } worried more about { PERSONA.POSESSIVE } hairstyle than { PERSONA.POSESSIVE } grades, { PERSONA.SUBJECTIVE } still somehow passed the final exams.",
+    "mods": { "crafting": 1, "social": 3 },
+    "block": { "cleaning": true }
+  },
+  {
+    "id": 6,
+    "name": "Accursed child",
+    "desc": "{ PERSONA.NAME } was born at the peak of a lunar eclipse. The elders declared { PERSONA.OBJECTIVE } a child of darkness brought { PERSONA.OBJECTIVE } under their care. { PERSONA.POSESSIVE } entire childhood was spent studying the lore and rituals of { PERSONA.POSESSIVE } people - until the day of calling.",
+    "mods": { "construction": -1, "intellectual": 5, "medical": 4 },
+    "block": { "cleaning": true, "fire-fighting": true, "hauling": true, "mining": true }
+  },
+  {
+    "id": 7,
+    "name": "Adventurous youth",
+    "desc": "{ PERSONA.NAME } explored all around { PERSONA.POSESSIVE } family's large estate, uncovering little natural wonders hidden in nearby catacombs, rivers, and caves.",
+    "mods": { "melee": 2, "social": 2, "cooking": 1 },
+    "block": { "cleaning": true }
+  },
+  {
+    "id": 8,
+    "name": "Amateur astronomer",
+    "desc": "{ PERSONA.NAME } was fascinated with astronomy. { PERSONA.SUBJECTIVE } would spend hours gazing at planets and nebulae through his telescope. { PERSONA.NAME } is credited with discovering a small comet that would, years later, strike a nearby moon and disrupt the mining operations there.",
+    "mods": { "intellectual": 6 },
+    "block": null
+  },
+  {
+    "id": 9,
+    "name": "Amateur botanist",
+    "desc": "Spending many summers crawling through dirt, { PERSONA.NAME } found { PERSONA.SUBJECTIVE } had quite the green thumb. Instead of learning to cook the food { PERSONA.SUBJECTIVE } grew, { PERSONA.SUBJECTIVE } just grew more and more.",
+    "mods": { "plants": 4, "artistic": 2 },
+    "block": { "cooking": true }
+  },
+  {
+    "id": 10,
+    "name": "Amateur engineer",
+    "desc": "{ PERSONA.NAME } grew up in a family with a military and engineering background. { PERSONA.SUBJECTIVE } wanted to join the army but { PERSONA.POSSESSIVE } father didn't like the idea, so { PERSONA.POSSESSIVE } interest turned to great flying machines and works of engineering. { PERSONA.SUBJECTIVE } secretly hoped that this would one day lead { PERSONA.OBJECTIVE } to a life of galactic exploration.",
+    "mods": { "construction": 2, "intellectual": 2, "mining": 1, "shooting": 1 },
+    "block": { "cleaning": true , "plants": true}
+  },
+  {
+    "id": 11,
+    "name": "Angry student",
+    "desc": "{ PERSONA.NAME } trained towards { PERSONA.POSSESSIVE } dream of working for { PERSONA.OBJECTIVE } hometown's local council. For reasons { PERSONA.SUBJECTIVE } never quite understood, { PERSONA.NAME } was bullied relentlessly by { PERSONA.POSSESSIVE } classmates. { PERSONA.SUBJECTIVE } chose to repress { PERSONA.OBJECTIVE } rage.",
+    "mods": { "intellectual": 4 },
+    "block": null
+  },
+  {
+    "id": 12,
+    "name": "Animal caretaker",
+    "desc": "Born on a yeild farm, { PERSONA.NAME } was tasked with caring for domestic animals. { PERSONA.SUBJECTIVE } grew to love them. With time, { PERSONA.SUBJECTIVE } learned to tame wild animals. { PERSONA.SUBJECTIVE } dreamed of one day meeting a unicorn and taming it.",
+    "mods": { "plants": 2, "animals": 4 },
+    "block": { "intellectual": true }
+  },
+  {
+    "id": 13,
+    "name": "Antisocial child",
+    "desc": "{ PERSONA.NAME } lacked typical social skills, and avoided social interaction. { PERSONA.SUBJECTIVE } gained satisfaction only from steady work. { PERSONA.SUBJECTIVE } especially disliked speaking with overly creative or outgoing individuals.",
+    "mods": { "crafting": 2, "intellectual": 3 },
+    "block": { "social": true , "artistic": true}
+  },
+  {
+    "id": 14,
+    "name": "Apocalypse survivor",
+    "desc": "{ PERSONA.NAME } was born during a time of unrest on { PERSONA.POSSESSIVE } homeworld, as climate change threatened mass starvation and flooding. As { PERSONA.SUBJECTIVE } grew up the situation worsened - billions died and peaceful states descended into anarchy. { PERSONA.NAME } and { PERSONA.POSSESSIVE } parents did whatever they had to to survive.",
+    "mods": { "shooting": 4, "artistic": -3, "intellectual": -3 },
+    "block": null
+  },
+  {
+    "id": 15,
+    "name": "Apprentice oracle",
+    "desc": "{ PERSONA.NAME } was chosen at an early age by the village elders to keep the sacred rituals of the Oracle. An irrepressibly curious child, { PERSONA.NAME } caused a religious crisis for { PERSONA.POSSESSIVE } tribe when { PERSONA.SUBJECTIVE } accidentally flipped a switch to open the \"tombs\" of the Gods - cryptosleep caskets inhabited by some very confused ancestors.",
+    "mods": { "social": 3, "medical": 2, "intellectual": 3 },
+    "block": null
+  },
+  {
+    "id": 16,
+    "name": "Awkward nerd",
+    "desc": "Always fascinated by machines, { PERSONA.NAME } spent { PERSONA.POSSESSIVE } time studying robotics and holography. { PERSONA.SUBJECTIVE } preferred the company of { PERSONA.POSSESSIVE } scientific creations to that of other people.",
+    "mods": { "social": -2, "melee": -2, "intellectual": 5, "crafting": 4 },
+    "block": null
+  },
+  {
+    "id": 17,
+    "name": "Brutal thief",
+    "desc": "Growing up in a gang, { PERSONA.NAME } learned the brutality of the streets. Knowing that showing weakness could be fatal, { PERSONA.SUBJECTIVE } closed { PERSONA.OBJECTIVE }self of to others.",
+    "mods": { "social": -2, "melee": 4, "shooting": 2, "plants": -2 },
+    "block": { "caring": true , "artistic": true }
+  },
+  {
+    "id": 18,
+    "name": "Bunker kid",
+    "desc": "{ PERSONA.NAME } grew up in an underground shelter, waiting for radioactive fallout to subside. { PERSONA.POSSESSIVE } rich family had gained access to a luxury bunker city, while billions died on the surface. Determined to one day seek revenge against the hated enemy, { PERSONA.NAME } spent most of { PERSONA.POSSESSIVE } time practicing shooting in { PERSONA.POSSESSIVE } private training facility.",
+    "mods": { "social": -2, "melee": 4, "shooting": 4 },
+    "block": { "plants": true , "artistic": true }
+  },
+  {
+    "id": 19,
+    "name": "Cat herder",
+    "desc": "{ PERSONA.NAME } helped out in { PERSONA.POSSESSIVE } father's cat breeding business, socializing, herding, and feeding hundreds of cats. When { PERSONA.SUBJECTIVE } refused to clean up after the cats, { PERSONA.SUBJECTIVE } was transferred to the breeding science division.",
+    "mods": { "social": 2, "cooking": 3 },
+    "block": { "cleaning": true , "hauling": true }
+  },
+  {
+    "id": 20,
+    "name": "Cave child",
+    "desc": "{ PERSONA.NAME } grew up in a large and intricate cave complex that extended deep into a mountainside. { PERSONA.SUBJECTIVE } helped the adults maintain and improve the deep caves.",
+    "mods": { "construction": 3, "mining": 3 },
+    "block": null
+  },
+  {
+    "id": 21,
+    "name": "Caveworld tender",
+    "desc": "{ PERSONA.NAME } grew up in cave complex deep beneath the surface of an inhospitable world. { PERSONA.SUBJECTIVE } worked with the other children tending the tribe’s fungus crops.",
+    "mods": { "plants": 4, "mining": 2, "shooting": -4 },
+    "block": null
+  },
+  {
+    "id": 22,
+    "name": "Caveworld tunneler",
+    "desc": "{ PERSONA.NAME } worked as a digger in the massive underground cave complex. { PERSONA.SUBJECTIVE } knows rock so well that { PERSONA.SUBJECTIVE } can almost navigate caves by smell.",
+    "mods": { "construction": 1, "mining": 6, "shooting": -2 },
+    "block": { "crafting": true, "intellectual": true }
+  },
+  {
+    "id": 23,
+    "name": "Chess master",
+    "desc": "{ PERSONA.NAME } loved to play chess. { PERSONA.SUBJECTIVE } even earned the nickname Bishop for some of { PERSONA.POSSESSIVE } craftier moves. { PERSONA.NAME } never got into trouble - mostly because { PERSONA.SUBJECTIVE } was good at not getting caught.",
+    "mods": { "social": 4, "intellectual": 2 },
+    "block": null
+  },
+  {
+    "id": 24,
+    "name": "Child of drifters",
+    "desc": "Ever since { PERSONA.SUBJECTIVE } was very small, { PERSONA.NAME } had never known a home beyond { PERSONA.POSSESSIVE } parent's ship. They were a family of nomads whose meandering provided a constant change of scenery. { PERSONA.POSSESSIVE } life was often perilous but never dull, and { PERSONA.SUBJECTIVE } inherited { PERSONA.POSSESSIVE } parents' wanderlust at a young age.",
+    "mods": { "social": -3, "shooting": 4, "crafting": 6, "melee": -2},
+    "block": { "fire-fighting": true, "plants": true, "mining": true }
+  },
+  {
+    "id": 25,
+    "name": "Child prodigy",
+    "desc": "After graduating college at age twelve, { PERSONA.NAME } devoted { PERSONA.POSSESSIVE } life to becoming immortal. However { PERSONA.POSSESSIVE } research crossed the line when { PERSONA.SUBJECTIVE } tried to modify { PERSONA.POSSESSIVE } body using gene therapy and mechanical augmentation. { PERSONA.SUBJECTIVE } was arrested and condemned to a prison planet.",
+    "mods": { "intellectual": 6, "mining": -3, "cooking": -3, "medical": 6},
+    "block": null
+  },
+  {
+    "id": 26,
+    "name": "Child slave",
+    "desc": "{ PERSONA.NAME } was born to a poor family on a bitworld. { PERSONA.POSSESSIVE } father sold { PERSONA.OBJECTIVE } into slavery at a young age and { PERSONA.SUBJECTIVE } was traded many times. A tycoon bought { PERSONA.OBJECTIVE } as part of a child labor force and sent { PERSONA.OBJECTIVE } down into mines to look after machines and to work alongside them.",
+    "mods": { "construction": 2, "mining": 3, "social": -2 },
+    "block": { "intellectual": true }
+  },
+  {
+    "id": 27,
+    "name": "Child soldier",
+    "desc": "War may never change - but the cast of characters does. Born on a violent urbworld, { PERSONA.NAME } was trained from a young age to fight the wars of others, and became rather good at it.",
+    "mods": { "shooting": 4, "melee": 2 },
+    "block": null
+  },
+  {
+    "id": 28,
+    "name": "Child spy",
+    "desc": "Children are often presumed innocent, and can be ideal as spies. { PERSONA.NAME } was trained in the art of infiltration and information-gathering when { PERSONA.SUBJECTIVE } was just nine years old. { PERSONA.POSSESSIVE } years behind enemy lines and the war-torn nature of { PERSONA.POSSESSIVE } homeworld meant { PERSONA.SUBJECTIVE } had limited opportunity for education.",
+    "mods": { "shooting": 5, "intellectual": -3 },
+    "block": null
+  },
+  {
+    "id": 29,
+    "name": "Child star",
+    "desc": "{ PERSONA.NAME } was well-known throughout { PERSONA.POSSESSIVE } homeworld as a child actor in films and TV shows. { PERSONA.POSSESSIVE } fame put { PERSONA.OBJECTIVE } in contact with many different kinds of people, but also tended to get in the way of { PERSONA.POSSESSIVE } education.",
+    "mods": { "social": 3, "intellectual": -2, "artistic": 3 },
+    "block": null
+  },
+  {
+    "id": 30,
+    "name": "Class clown",
+    "desc": "In the ultra-competitive environs of his etherworld school, { PERSONA.NAME } always offered to play the class clown to diffuse tension. { PERSONA.SUBJECTIVE } developed a sense of social desperation from this, as well as an appreciation for the artistic side of comedy.",
+    "mods": { "social": -3, "artistic": 4 },
+    "block": { "violent": true }
+  },
+  {
+    "id": 31,
+    "name": "Clone-farmed ",
+    "desc": "Clone children are seeded into organic-rich wombvats and rapidly grown in a simmed universe. They're harvested later, sometimes for food, sometimes for organs, sometimes for workers - but they're always called 'Disposable'.",
+    "mods": { "shooting": -3, "intellectual": 4, "artistic": 3 },
+    "block": null
+  },
+  {
+    "id": 32,
+    "name": "Coma child",
+    "desc": "A childhood accident put { PERSONA.NAME } into a coma. { PERSONA.SUBJECTIVE } didn’t wake up until { PERSONA.SUBJECTIVE } was in { PERSONA.POSSESSIVE } late teens. { PERSONA.POSSESSIVE } body never recovered from the years of inactivity, but people tend to take pity on { PERSONA.OBJECTIVE } when they hear { PERSONA.POSSESSIVE } story.",
+    "mods": { "social": 4, "construction": -2, "mining": -2 },
+    "block": null
+  },
+  {
+    "id": 33,
+    "name": "Computer geek",
+    "desc": "{ PERSONA.NAME } spent most of { PERSONA.POSSESSIVE } childhood on { PERSONA.POSSESSIVE } computer, typing away, never knowing when to get up and eat. { PERSONA.SUBJECTIVE } had a very narrow interest: hacking cryptobiotic safety protocols.",
+    "mods": { "intellectual": 3, "construction": 3, "shooting": -2, "animals": 2 },
+    "block": { "social": true, "cooking": true, "plants": true }
+  },
+  {
+    "id": 34,
+    "name": "Convent child",
+    "desc": "The child of an illicit affair, { PERSONA.NAME } was bought up by nuns in a medieval convent. { PERSONA.SUBJECTIVE } learned the value of hard work and submission, but was taught that technology is heretical.",
+    "mods": { "construction": 3, "plants": 3 },
+    "block": { "intellectual": true, "violent": true }
+  },
+  {
+    "id": 35,
+    "name": "Core dilettante",
+    "desc": "{ PERSONA.NAME } spent { PERSONA.POSSESSIVE } formative years on an etherworld in the core region, where { PERSONA.SUBJECTIVE } and { PERSONA.OBJECTIVE } friends pursued lives of idle pleasure. As { PERSONA.SUBJECTIVE } grew up, { PERSONA.SUBJECTIVE } began to find the life of ease unfulfilling. { PERSONA.SUBJECTIVE } decided to look for a more challenging path.",
+    "mods": { "intellectual": 2, "social": 2, "artistic": 2 },
+    "block": { "dumb-labor": true, "violent": true }
+  },
+  {
+    "id": 36,
+    "name": "Corp-bred student",
+    "desc": "{ PERSONA.NAME } was bred to become an executive for the space exploration corporation that owned { PERSONA.POSSESSIVE } home planet. { PERSONA.POSSESSIVE } family had been working for that corporation for four generations. At age five, { PERSONA.SUBJECTIVE } enrolled at the corporate academy where { PERSONA.SUBJECTIVE } learned loyalty and ruthlessness. { PERSONA.NAME } excelled in finding diplomatic solutions where others would need violence.",
+    "mods": { "intellectual": 5, "social": 7, "medical": 3, "crafting": 3 },
+    "block": { "artistic": true, "violent": true }
+  },
+  {
+    "id": 37,
+    "name": "Corporate slave",
+    "desc": "{ PERSONA.NAME } grew up in a colony owned by a large etherworld corporation. All children had virtual reality devices attached by force, and were raised in a brutal digital world. Constantly forced to fight others for the entertainment of the wealthy, gunplay and tactics became the center of { PERSONA.NAME }'s universe. ",
+    "mods": { "plants": -2, "shooting": 4, "social": 4, "animals": -2 },
+    "block": { "cooking": true, "cleaning": true }
+  },
+  {
+    "id": 38,
+    "name": "Cult child",
+    "desc": "{ PERSONA.NAME } was born into a powerful cult which shunned advanced technology and believed that all illness could be cured by cleansing the soul through sacred art. After { PERSONA.POSSESSIVE } first glimpse of the outside world, { PERSONA.SUBJECTIVE } decided to run away.",
+    "mods": { "medical": -3, "artistic": 5 },
+    "block": { "intellectual": true }
+  },
+  {
+    "id": 39,
+    "name": "Desert rat",
+    "desc": "{ PERSONA.NAME } was born to a tribe of desert ascetics who wandered the endless wastes. They sought a mythical substance they believed could liberate them from ignorance through psychedelic revelation - and usher in a new period of interstellar peace.",
+    "mods": { "intellectual": 2, "melee": 2, "medical": 2 },
+    "block": null
+  },
+  {
+    "id": 40,
+    "name": "Disaster survivor",
+    "desc": "{ PERSONA.NAME }'s planet collided with a small moon. Everything { PERSONA.SUBJECTIVE } knew as home was destroyed, and { PERSONA.POSSESSIVE } entire family died. { PERSONA.SUBJECTIVE } was left in the ruins to fend for { PERSONA.OBJECTIVE }self.",
+    "mods": { "construction": 3, "cooking": 2, "crafting": 1 },
+    "block": { "animals": true }
+  },
+  {
+    "id": 41,
+    "name": "Disaster survivor",
+    "desc": "{ PERSONA.NAME } was uprooted when bitcoin maximalists attacked { PERSONA.POSSESSIVE } family farm, destroying machinery and killing farmhands and beasts alike. After the death of all { PERSONA.SUBJECTIVE } knew, { PERSONA.SUBJECTIVE } was left in the ruins to fend for { PERSONA.OBJECTIVE }self.",
+    "mods": { "plants": 2, "melee": 3, "crafting": 2 },
+    "block": null
+  },
+  {
+    "id": 42,
+    "name": "Displaced noble",
+    "desc": "Born on an urbworld to the ruler of three megacities, { PERSONA.NAME }’s prospects looked good - until a violent insurrection overthrew { PERSONA.POSSESSIVE } family. Exile introduced { PERSONA.NAME } to hard work and combat, but some high-born squeamishness remains.",
+    "mods": { "intellectual": 1, "shooting": 3, "crafting": 2 },
+    "block": { "dumb-labor": true }
+  },
+  {
+    "id": 43,
+    "name": "Dreaded baby",
+    "desc": "{ PERSONA.NAME } was found as a baby in a crashed spacecraft. According to the ship's data records, { PERSONA.SUBJECTIVE } invented the nuclear device that powered { PERSONA.POSSESSIVE } ship. Apparently, { PERSONA.SUBJECTIVE } also invented the sky and the hamburger, and is said to have fathered a race of tasty golden kittens.",
+    "mods": { "cooking": 3, "shooting": 1, "artistic": 3 },
+    "block": null
+  },
+  {
+    "id": 44,
+    "name": "Drug mule",
+    "desc": "Raised in an orphanage, { PERSONA.NAME } turned towards the gang life at age ten. { PERSONA.SUBJECTIVE } was exploited by the local gang as a drug mule to traffic \"substance F\" across rival gang territory. { PERSONA.SUBJECTIVE } took a bullet or two. ",
+    "mods": { "melee": 3, "shooting": 2 },
+    "block": { "intellectual": true, "caring": true, "social": true, "artistic": true, "cleaning": true, "plants": true  }
+  },
+  {
+    "id": 45,
+    "name": "Earth colonist",
+    "desc": "{ PERSONA.NAME } was born on Earth. As a child, { PERSONA.SUBJECTIVE } was launched into space as part of an interstellar colonization program.",
+    "mods": { "plants": 4, "cooking": 3, "crafting": 2 },
+    "block": { "artistic": true, "fire-fighting": true }
+  },
+  {
+    "id": 46,
+    "name": "Empath",
+    "desc": "{ PERSONA.NAME } was an incredibly empathetic child, so much that { PERSONA.SUBJECTIVE } was totally overwhelmed by simple social interactions. Once, { PERSONA.SUBJECTIVE } stepped on a bug and felt so guilty { PERSONA.SUBJECTIVE } cried for an hour. { PERSONA.NAME } did try to use a gun one time, but it went very poorly, as the loud noise made { PERSONA.OBJECTIVE } flinch uncontrollably.",
+    "mods": { "intellectual": 2, "artistic": 2 },
+    "block": { "violent": true, "social": true, "animals": true }
+  },
+  {
+    "id": 47,
+    "name": "Farm kid",
+    "desc": "{ PERSONA.NAME } grew up on { PERSONA.POSSESSIVE } family's beef farm. { PERSONA.SUBJECTIVE } enjoyed working the fields and taking care of the animals.",
+    "mods": { "plants": 3, "medical": 2, "crafting": 2},
+    "block": null
+  },
+  {
+    "id": 48,
+    "name": "Farm mechanic",
+    "desc": "Growing up on a farming planet, { PERSONA.NAME } spent { PERSONA.POSSESSIVE } time learning about the automated machinery that grew and harvested the multitude of crops.",
+    "mods": { "plants": 2, "construction": 4 },
+    "block": { "intellectual": true, "artistic": true }
+  },
+  {
+    "id": 49,
+    "name": "Feral child",
+    "desc": "Abandoned on an animal planet as a small child with nought but a blanket with a name embroidered on it, { PERSONA.NAME } made { PERSONA.OBJECTIVE }self one with the wilderness. When { PERSONA.SUBJECTIVE } was 13, { PERSONA.SUBJECTIVE } encountered a team of mineral surveyors, who \"offered\" { PERSONA.OBJECTIVE } passage off of the planet.",
+    "mods": { "plants": 2, "melee": 4, "crafting": 1 },
+    "block": { "intellectual": true, "social": true }
+  },
+  {
+    "id": 50,
+    "name": "Fire keeper",
+    "desc": "{ PERSONA.NAME } was responsible for keeping the tribe’s fire going. { PERSONA.SUBJECTIVE } took this responsibility very seriously.",
+    "mods": { "crafting": 2, "cooking": 2 },
+    "block": null
+  },
+  {
+    "id": 51,
+    "name": "Forest child",
+    "desc": "When { PERSONA.SUBJECTIVE } was a baby, { PERSONA.NAME }'s mother went insane and left { PERSONA.OBJECTIVE } in the woods. Raised by wild people, { PERSONA.NAME } was known for both loving and killing animals.",
+    "mods": { "melee": 2, "animals": 2 },
+    "block": { "intellectual": true }
+  },
+  {
+    "id": 52,
+    "name": "Frightened child",
+    "desc": "{ PERSONA.NAME } grew up with a laundry list of phobias and neuroses. { PERSONA.SUBJECTIVE } feared, among other things, doctors and foodborne pathogens. As a result, { PERSONA.SUBJECTIVE } learned to cook and care for { PERSONA.OBJECTIVE }self, but many of { PERSONA.POSSESSIVE } fears dog { PERSONA.OBJECTIVE } in adulthood.",
+    "mods": { "medical": 3, "cooking": 3 },
+    "block": { "violent": true }
+  },
+  {
+    "id": 53,
+    "name": "Hacker kid",
+    "desc": "Born on a high-tech world, { PERSONA.NAME } learned hack computers at a young age. Spending many hours tinkering alone made { PERSONA.OBJECTIVE } very good with machines, but very bad with humans.",
+    "mods": { "construction": 3, "crafting": 3 },
+    "block": { "social": true }
+  },
+  {
+    "id": 54,
+    "name": "Herder",
+    "desc": "As a child, { PERSONA.NAME } tended the tribe’s muffalo herds, keeping them safe from predators and treating the sick. It was quiet work, but { PERSONA.SUBJECTIVE } enjoyed being away from people.",
+    "mods": { "medical": 3, "melee": 3, "social": -2 },
+    "block": null
+  },
+  {
+    "id": 55,
+    "name": "Industrial orphan",
+    "desc": "{ PERSONA.NAME } never knew { PERSONA.POSSESSIVE } parents. { PERSONA.POSSESSIVE } earliest memories were of drudgery in the mines and workhouses of { PERSONA.POSSESSIVE } industrial world. Because of this, { PERSONA.SUBJECTIVE } never received a proper education. ",
+    "mods": { "crafting": 3, "intellectual": -2, "mining": 3 },
+    "block": null
+  },
+  {
+    "id": 56,
+    "name": "Killer",
+    "desc": "{ PERSONA.NAME } was a bloodlusting child. Villagers thought { PERSONA.OBJECTIVE } the product of a snake demon and human coupling.",
+    "mods": { "melee": 4, "medical": 2 },
+    "block": { "social": true }
+  },
+  {
+    "id": 57,
+    "name": "Lab-grown child",
+    "desc": "{ PERSONA.NAME } was born in a laboratory as part of a altruistic but failed attempt to create a new class of human. { PERSONA.POSSESSIVE } childhood was filled with books and one-on-one tutoring. { PERSONA.SUBJECTIVE } was awkward, shy, and naive to the true nature of humanity.",
+    "mods": { "plants": 2, "intellectual": 2, "artistic": 2 },
+    "block": { "animals": true }
+  },
+  {
+    "id": 58,
+    "name": "Medical assistant",
+    "desc": "{ PERSONA.NAME } was born during a catastrophic war in which both sides used napalm extensively. { PERSONA.SUBJECTIVE } grew up helping { PERSONA.POSSESSIVE } parents in an infirmary, treating the cascade of horrific burns from the battlefields. { PERSONA.SUBJECTIVE } was left with a lifelong fear of fire.",
+    "mods": { "medical": 5 },
+    "block": { "fire-fighting": true }
+  },
+  {
+    "id": 59,
+    "name": "Medieval lordling",
+    "desc": "{ PERSONA.NAME } grew up pulling carts and digging holes on a medieval world. Simple manual labor is { PERSONA.POSSESSIVE } oldest companion - along with the master's lash. { PERSONA.SUBJECTIVE } didn't learn to read until age nine.",
+    "mods": { "plants": 2, "construction": 2, "mining": 2, "intellectual": -3 },
+    "block": null
+  },
+  {
+    "id": 60,
+    "name": "Optimistic child",
+    "desc": "{ PERSONA.NAME } was blessed with loving parents and a pleasant midworld life. { PERSONA.SUBJECTIVE } was an optimistic and sociable kid who loved making friends and listening to their stories. { PERSONA.POSSESSIVE } imagination would run wild with ideas and questions.",
+    "mods": { "social": 4 },
+    "block": null
+  },
+  {
+    "id": 61,
+    "name": "Orphan",
+    "desc": "Born in a brothel on a harsh world, { PERSONA.NAME } never really had a childhood. { PERSONA.SUBJECTIVE } did odd jobs to survive, and became distant from others.",
+    "mods": { "construction": 2, "cooking": 2, "crafting": 2 },
+    "block": { "animals": true, "social": true }
+  },
+  {
+    "id": 62,
+    "name": "Orphan",
+    "desc": "Born on a deep space station, { PERSONA.NAME } was orphaned at a young age. In the orphanage, { PERSONA.SUBJECTIVE } stood up for the weaker kids and fought off the bullies.",
+    "mods": { "melee": 4, "medical": 2 },
+    "block": { "crafting": true }
+  },
+  {
+    "id": 63,
+    "name": "Orphan",
+    "desc": "Left alone in the world without parents, { PERSONA.NAME } did the best { PERSONA.SUBJECTIVE } could to adapt. Having to take care both of { PERSONA.OBJECTIVE }self and younger kids at the orphanage, { PERSONA.SUBJECTIVE } learned a lot about humans and how to interact with them.",
+    "mods": { "social": 6 },
+    "block": null
+  }
+]

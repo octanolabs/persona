@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "animals"
+  },
+  {
+    "id": 1,
+    "name": "artistic"
+  },
+  {
+    "id": 2,
+    "name": "construction"
+  },
+  {
+    "id": 3,
+    "name": "cooking"
+  },
+  {
+    "id": 4,
+    "name": "crafting"
+  },
+  {
+    "id": 5,
+    "name": "medical"
+  },
+  {
+    "id": 6,
+    "name": "melee"
+  },
+  {
+    "id": 7,
+    "name": "mining"
+  },
+  {
+    "id": 8,
+    "name": "intellectual"
+  },
+  {
+    "id": 9,
+    "name": "plants"
+  },
+  {
+    "id": 10,
+    "name": "shooting"
+  },
+  {
+    "id": 11,
+    "name": "social"
+  }
+]
