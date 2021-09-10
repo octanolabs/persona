@@ -28,7 +28,7 @@ import sexes from './data/sexes.json'
 
 const skills = Skills 
 
-export function getBaseSkills(address) { 
+export function getPersona(address) { 
   // split address
   const keccak = bufferToHex(keccakFromHexString(address))
   const stripped = stripHexPrefix(keccak.toLowerCase())
