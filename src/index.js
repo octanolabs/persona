@@ -7,7 +7,7 @@ import Traits from './data/traits.json'
 import maleNames from './data/names/first/male.json'
 import femaleNames from './data/names/first/female.json'
 import familyNames from './data/names/family.json'
-import genders from './data/genders.json'
+import sexes from './data/sexes.json'
 
 /*
 
@@ -45,7 +45,7 @@ export function getBaseSkills(address) {
   const levelsHex = split.slice(8, 20) // skills segment
 
   // consts
-  let gender = 0
+  let sex = 0
   const baseSkills = []
   const traits = {}
 
@@ -59,14 +59,14 @@ export function getBaseSkills(address) {
   const n2 = Math.floor(adulthoodDecimal / 4) // currently 64 options (256/64=4)
   const adulthood = Adulthood[n2]
 
-  // determine gender
+  // determine sex
   let sum = new BigNumber(0)
   for (const [index, hex] of split.entries()) {
     sum = sum.plus(new BigNumber(hex, 16))
   }
   if ( sum % 2 ) {
     // odd
-    gender = 1
+    sex = 1
   }
 
   // set up incapable actions
@@ -74,7 +74,7 @@ export function getBaseSkills(address) {
 
   let firstName = ""
   let secondName = ""
-  if (gender === 0) {
+  if (sex === 0) {
     firstName = femaleNames[name.first]
     secondName = femaleNames[name.second]
   } else {
@@ -151,8 +151,8 @@ export function getBaseSkills(address) {
     if (aMod) {
       level = level + (aMod * 8)
     }
-    // apply gender mods
-    const gMod = genders[gender].mods[skill] || null
+    // apply sex mods
+    const gMod = sexes[sex].mods[skill] || null
     if (gMod) {
       level = level + (gMod * 8)
     }
@@ -196,8 +196,9 @@ export function getBaseSkills(address) {
       capable
     })
   }
+
   return {
-    gender: genders[gender],
+    sex: sexes[sex],
     name: {
       first: firstName,
       second: secondName,

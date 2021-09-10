@@ -130,7 +130,7 @@
       ]
     },
     "gay": {
-      "desc": "{ NAME } is romantically attracted to people of their own gender.",
+      "desc": "{ NAME } is romantically attracted to people of their own sex.",
       "rate": 0.4,
       "conflicts": [
         "asexual",
