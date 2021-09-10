@@ -196,22 +196,35 @@ export function getBaseSkills(address) {
       capable
     })
   }
+  const name = {
+    first: firstName,
+    second: secondName,
+    family: familyName
+  }
 
   return {
     sex: sexes[sex],
-    name: {
-      first: firstName,
-      second: secondName,
-      family: familyName
-    },
+    name,
     skills: baseSkills,
-    childhood,
-    adulthood,
+    childhood: parseBackstory(childhood, name, sexes[sex]),
+    adulthood: parseBackstory(adulthood, name, sexes[sex]),
     traits,
     incapableOf
   }
 }
 
+function parseBackstory(backstory, name, sex) {
+  let desc = backstory.replace(/{ PERSONA.NAME }/g, name.first) // name
+  // at beginning of sentance (case fix)
+  desc = desc.replace(/\. { PERSONA.SUBJECTIVE }/g, '. ' + sex.pronouns.subjective.charAt(0).toUpperCase() + sex.pronouns.subjective.slice(1))
+  desc = desc.replace(/\. { PERSONA.OBJECTIVE }/g, '. ' + sex.pronouns.objective.charAt(0).toUpperCase() + sex.pronouns.objective.slice(1))
+  desc = desc.replace(/\. { PERSONA.POSSESSIVE }/g, '. ' + sex.pronouns.possessive.charAt(0).toUpperCase() + sex.pronouns.possessive.slice(1))
+  // anywhere else
+  desc = desc.replace(/{ PERSONA.SUBJECTIVE }/g, sex.pronouns.subjective)
+  desc = desc.replace(/{ PERSONA.OBJECTIVE }/g, sex.pronouns.objective)
+  desc = desc.replace(/{ PERSONA.POSSESSIVE }/g, sex.pronouns.possessive)
+  return desc
+}
 
 function stripHexPrefix(str) {
   if (typeof str !== 'string') {
