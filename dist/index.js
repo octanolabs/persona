@@ -55,12 +55,12 @@ function getPersona(address) {
           hex = _step$value[1];
 
       var value = new _ethereumjsUtil.BN(hex, 16);
-      sum = sum.plus(value);
+      sum = sum.add(value);
 
       if (index % 2) {
-        even = even.plus(value);
+        even = even.add(value);
       } else {
-        odd = odd.plus(value);
+        odd = odd.add(value);
       }
     } // determine sex based on even/odd state off total sum
 
