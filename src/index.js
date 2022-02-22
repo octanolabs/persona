@@ -20,11 +20,11 @@ export function getPersona(address) {
   /* eslint-disable no-unused-vars */
   for (const [index, hex] of split.entries()) {
     const value = new BN(hex, 16)
-    sum = sum.plus(value)
+    sum = sum.add(value)
     if (index % 2) {
-      even = even.plus(value)
+      even = even.add(value)
     } else {
-      odd = odd.plus(value)
+      odd = odd.add(value)
     }
   }
 
