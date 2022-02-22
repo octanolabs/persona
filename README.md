@@ -1,8 +1,10 @@
 # Persona
 
-Returns a base persona for a given ubiq or ethereum address.
+Returns a base persona (name, sex & zodiac) for a given ubiq or ethereum address.
 
 As an homage to Satoshi Nakamoto, all names (both given and family) are of a japanese origin.
+
+*Life is for one generation; A good name is forever.*
 
 ### Install 
 
