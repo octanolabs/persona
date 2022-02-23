@@ -27,16 +27,27 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+var ADDRESS = new RegExp(/^0x[0-9a-fA-F]{40}$/i);
+
 function getPersona(address) {
-  // hash the address, this will ensure minor differences in a given address
-  // address will create major differences in the result.
+  // validate address
+  if (!ADDRESS.test(address)) {
+    return {
+      success: false,
+      error: address + " is not a valid Ubiq/Ethereum address"
+    };
+  } // hash the address, this will ensure minor differences in a given address
+  // will create major differences in the end result.
+
+
   var keccak = (0, _ethereumjsUtil.bufferToHex)((0, _ethereumjsUtil.keccakFromHexString)(address.toLowerCase())); // strip '0x' prefix from keccack hash
 
   var stripped = (0, _ethereumjsUtil.stripHexPrefix)(keccak.toLowerCase()); // split hash into byte array
 
   var split = stripped.match(/.{1,2}/g); // containers
 
-  var sex = 0;
+  var sex = 0; // female
+
   var sum = new _ethereumjsUtil.BN(0); // sum of all positions
 
   var even = new _ethereumjsUtil.BN(0); // sum of even positions
@@ -71,7 +82,7 @@ function getPersona(address) {
   }
 
   if (sum % 2) {
-    sex = 1;
+    sex = 1; // male
   } // determine zodiac
 
 
@@ -79,26 +90,29 @@ function getPersona(address) {
   var zodiac = _zodiacs["default"][zodiacIndex]; // determine given name based on sex
   // total male given names: 512
   // total female given names: 512
-  // maximum potential even sum: 4096
+  // maximum potential odd sum: 4096
 
   var given = '';
 
   if (sex === 0) {
-    given = _names["default"].female[Math.floor(even / 8)];
+    given = _names["default"].female[Math.floor(odd / 8)];
   } else {
-    given = _names["default"].male[Math.floor(even / 8)];
+    given = _names["default"].male[Math.floor(odd / 8)];
   } // dertermine family name from a total of 4096
-  // maximum potential odd sum: 4096
+  // maximum potential even sum: 4096
 
 
-  var family = _names["default"].family[odd]; // done
+  var family = _names["default"].family[even]; // done
 
   return {
+    success: true,
     sex: sex === 0 ? 'female' : 'male',
     name: {
       given: given,
       family: family
     },
-    zodiac: zodiac
+    zodiac: zodiac,
+    version: 1 // in case we make breaking changes in future.
+
   };
 }
