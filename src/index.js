@@ -4,7 +4,7 @@ import zodiacs from './zodiacs'
 
 export function getPersona(address) {
   // hash the address, this will ensure minor differences in a given address
-  // address will create major differences in the result.
+  // will create major differences in the end result.
   const keccak = bufferToHex(keccakFromHexString(address.toLowerCase()))
   // strip '0x' prefix from keccack hash
   const stripped = stripHexPrefix(keccak.toLowerCase())
@@ -12,7 +12,7 @@ export function getPersona(address) {
   const split = stripped.match(/.{1,2}/g)
 
   // containers
-  let sex = 0
+  let sex = 0 // female
   let sum = new BN(0) // sum of all positions
   let even = new BN(0) // sum of even positions
   let odd = new BN(0) // sum of odd positions
@@ -30,7 +30,7 @@ export function getPersona(address) {
 
   // determine sex based on even/odd state off total sum
   if (sum % 2) {
-    sex = 1
+    sex = 1 // male
   }
 
   // determine zodiac
@@ -40,17 +40,17 @@ export function getPersona(address) {
   // determine given name based on sex
   // total male given names: 512
   // total female given names: 512
-  // maximum potential even sum: 4096
+  // maximum potential odd sum: 4096
   let given = ''
   if (sex === 0) {
-    given = names.female[Math.floor(even / 8)]
+    given = names.female[Math.floor(odd / 8)]
   } else {
-    given = names.male[Math.floor(even / 8)]
+    given = names.male[Math.floor(odd / 8)]
   }
 
   // dertermine family name from a total of 4096
-  // maximum potential odd sum: 4096
-  const family = names.family[odd]
+  // maximum potential even sum: 4096
+  const family = names.family[even]
 
   // done
   return {
@@ -60,5 +60,6 @@ export function getPersona(address) {
       family,
     },
     zodiac,
+    version: 1 // in case we make breaking changes in future.
   }
 }
