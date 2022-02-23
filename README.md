@@ -16,17 +16,19 @@ npm install @octano/persona
 
 ```
 import { getPersona } from '@octano/persona'
-const persona = getPersona('0xaEB7897ADF9b1309D7EF2dca6f3F6aFb65358ABD')
+const persona = getPersona('0x8429ab69b8721ffb29f2e66fdf06b1c65d66eb58')
 ```
 
 ```
 {
+  success: true,
   sex: 'male',
   name: {
-    given: 'Satoshi',
-    family: 'Nakamoto',
+    given: 'Kiichi',
+    family: 'Oshikawa',
   },
-  zodiac: 'libra'
+  zodiac: 'leo',
+  version: 1
 }
 ```
 
@@ -58,4 +60,18 @@ one of the following
   'taurus',
   'virgo',
 ]
+```
+
+#### Error handling
+
+```
+import { getPersona } from '@octano/persona'
+const persona = getPersona('NOT_A_VALID_ADDRESS')
+```
+
+```
+{
+  success: false,
+  error: 'NOT_A_VALID_ADDRESS is not a valid Ubiq/Ethereum address'
+}
 ```

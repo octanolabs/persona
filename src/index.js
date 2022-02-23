@@ -2,7 +2,16 @@ import { bufferToHex, keccakFromHexString, stripHexPrefix, BN } from 'ethereumjs
 import names from './names'
 import zodiacs from './zodiacs'
 
+const ADDRESS = new RegExp(/^0x[0-9a-fA-F]{40}$/i)
+
 export function getPersona(address) {
+  // validate address
+  if (!ADDRESS.test(address)) {
+    return {
+      success: false,
+      error: address + " is not a valid Ubiq/Ethereum address"
+    }
+  }
   // hash the address, this will ensure minor differences in a given address
   // will create major differences in the end result.
   const keccak = bufferToHex(keccakFromHexString(address.toLowerCase()))
@@ -54,6 +63,7 @@ export function getPersona(address) {
 
   // done
   return {
+    success: true,
     sex: sex === 0 ? 'female' : 'male',
     name: {
       given,
