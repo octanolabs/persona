@@ -34,7 +34,7 @@ function getPersona(address) {
   if (!ADDRESS.test(address)) {
     return {
       success: false,
-      error: address + " is not a valid Ubiq/Ethereum address"
+      error: address + " is not a valid address"
     };
   } // hash the address, this will ensure minor differences in a given address
   // will create major differences in the end result.
@@ -54,9 +54,14 @@ function getPersona(address) {
 
   var odd = new _ethereumjsUtil.BN(0); // sum of odd positions
 
+  var h1 = new _ethereumjsUtil.BN(0); // sum of half 1 positions
+
+  var h2 = new _ethereumjsUtil.BN(0); // sum of half 2 positions
+
+  var positions = split.entries();
   /* eslint-disable no-unused-vars */
 
-  var _iterator = _createForOfIteratorHelper(split.entries()),
+  var _iterator = _createForOfIteratorHelper(positions),
       _step;
 
   try {
@@ -91,18 +96,22 @@ function getPersona(address) {
   // total male given names: 512
   // total female given names: 512
   // maximum potential odd sum: 4096
+  // maximum potential even sum: 4096
 
   var given = '';
 
   if (sex === 0) {
-    given = _names["default"].female[Math.floor(odd / 8)];
+    // female. use sum of even positions
+    given = _names["default"].female[Math.floor(even / 8)];
   } else {
+    // male. use sum of odd positions
     given = _names["default"].male[Math.floor(odd / 8)];
-  } // dertermine family name from a total of 4096
-  // maximum potential even sum: 4096
+  } // determine family name from a total of 4096
+  // maximum potential sum: 8192
 
 
-  var family = _names["default"].family[even]; // done
+  var family = _names["default"].family[Math.floor(sum / 2)]; // done
+
 
   return {
     success: true,
