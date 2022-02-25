@@ -10,11 +10,11 @@ describe('getPersona', function() {
     it('Sex should be male', function() {
       assert.equal(persona1.sex, 'male')
     })
-    it('Given name should be Kiichi', function() {
-      assert.equal(persona1.name.given, 'Kiichi')
+    it('Given name should be Kazufumi', function() {
+      assert.equal(persona1.name.given, 'Kazufumi')
     })
-    it('Family name should be Oshikawa', function() {
-      assert.equal(persona1.name.family, 'Oshikawa')
+    it('Family name should be Takeuchi', function() {
+      assert.equal(persona1.name.family, 'Takeuchi')
     })
     it('Zodiac should be leo', function() {
       assert.equal(persona1.zodiac, 'leo')
@@ -28,11 +28,11 @@ describe('getPersona', function() {
     it('Sex should be female', function() {
       assert.equal(persona2.sex, 'female')
     })
-    it('Given name should be Maki', function() {
-      assert.equal(persona2.name.given, 'Maki')
+    it('Given name should be Sayuri', function() {
+      assert.equal(persona2.name.given, 'Sayuri')
     })
-    it('Family name should be Isawa', function() {
-      assert.equal(persona2.name.family, 'Isawa')
+    it('Family name should be Matsumoto', function() {
+      assert.equal(persona2.name.family, 'Matsumoto')
     })
     it('Zodiac should be gemini', function() {
       assert.equal(persona2.zodiac, 'gemini')
@@ -46,23 +46,23 @@ describe('getPersona', function() {
     it('Sex should be male', function() {
       assert.equal(persona3.sex, 'male')
     })
-    it('Given name should be Kotaro', function() {
-      assert.equal(persona3.name.given, 'Kotaro')
+    it('Given name should be Hideaki', function() {
+      assert.equal(persona3.name.given, 'Hideaki')
     })
-    it('Family name should be Yokozawa', function() {
-      assert.equal(persona3.name.family, 'Yokozawa')
+    it('Family name should be Adachi', function() {
+      assert.equal(persona3.name.family, 'Adachi')
     })
     it('Zodiac should be aries', function() {
       assert.equal(persona3.zodiac, 'aries')
     })
   })
-  const invalidPersona = getPersona('notavalidaddress')
+  const invalidPersona = getPersona('NOT_A_VALID_ADDRESS')
   describe('Invalid address', function(){
     it('Success should be false', function() {
       assert.equal(invalidPersona.success, false)
     })
     it('Error should be descriptive', function() {
-      assert.equal(invalidPersona.error, "notavalidaddress is not a valid Ubiq/Ethereum address")
+      assert.equal(invalidPersona.error, "NOT_A_VALID_ADDRESS is not a valid address")
     })
   })
 })

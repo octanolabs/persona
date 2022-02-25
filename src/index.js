@@ -9,7 +9,7 @@ export function getPersona(address) {
   if (!ADDRESS.test(address)) {
     return {
       success: false,
-      error: address + " is not a valid Ubiq/Ethereum address"
+      error: address + " is not a valid address"
     }
   }
   // hash the address, this will ensure minor differences in a given address
@@ -25,9 +25,13 @@ export function getPersona(address) {
   let sum = new BN(0) // sum of all positions
   let even = new BN(0) // sum of even positions
   let odd = new BN(0) // sum of odd positions
+  let h1 = new BN(0) // sum of half 1 positions
+  let h2 = new BN(0) // sum of half 2 positions
+
+  const positions = split.entries()
 
   /* eslint-disable no-unused-vars */
-  for (const [index, hex] of split.entries()) {
+  for (const [index, hex] of positions) {
     const value = new BN(hex, 16)
     sum = sum.add(value)
     if (index % 2) {
@@ -50,16 +54,19 @@ export function getPersona(address) {
   // total male given names: 512
   // total female given names: 512
   // maximum potential odd sum: 4096
-  let given = ''
+  // maximum potential even sum: 4096
+  let given = '' 
   if (sex === 0) {
-    given = names.female[Math.floor(odd / 8)]
+    // female. use sum of even positions
+    given = names.female[Math.floor(even / 8)]
   } else {
+    // male. use sum of odd positions
     given = names.male[Math.floor(odd / 8)]
   }
 
-  // dertermine family name from a total of 4096
-  // maximum potential even sum: 4096
-  const family = names.family[even]
+  // determine family name from a total of 4096
+  // maximum potential sum: 8192
+  const family = names.family[Math.floor(sum/2)]
 
   // done
   return {
