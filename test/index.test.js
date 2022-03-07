@@ -1,5 +1,5 @@
 import assert from 'assert'
-import { getPersona } from '../src/index.js'
+import { getPersona, getPersonaNFT } from '../src/index.js'
 
 describe('getPersona', function() {
   const persona1 = getPersona('0x8429ab69b8721ffb29f2e66fdf06b1c65d66eb58')
@@ -63,6 +63,81 @@ describe('getPersona', function() {
     })
     it('Error should be descriptive', function() {
       assert.equal(invalidPersona.error, "NOT_A_VALID_ADDRESS is not a valid address")
+    })
+  })
+})
+
+describe('getPersonaNFT', function() {
+  const punk6529 = getPersonaNFT('0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB', 6529, 1)
+  describe('punk6529', function(){
+    it('Success should be true', function() {
+      assert.equal(punk6529.success, true)
+    })
+    it('Sex should be female', function() {
+      assert.equal(punk6529.sex, 'female')
+    })
+    it('Given name should be Mieko', function() {
+      assert.equal(punk6529.name.given, 'Mieko')
+    })
+    it('Family name should be Kubota', function() {
+      assert.equal(punk6529.name.family, 'Kubota')
+    })
+    it('Zodiac should be sagittarius', function() {
+      assert.equal(punk6529.zodiac, 'sagittarius')
+    })
+  })
+  const punk6529M = getPersonaNFT('0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB', 6529, 1, 'male')
+  describe('punk6529 with sex override (male)', function(){
+    it('Success should be true', function() {
+      assert.equal(punk6529M.success, true)
+    })
+    it('Sex should be male', function() {
+      assert.equal(punk6529M.sex, 'male')
+    })
+    it('Given name should be Kiyoshi', function() {
+      assert.equal(punk6529M.name.given, 'Kiyoshi')
+    })
+    it('Family name should be Kubota', function() {
+      assert.equal(punk6529M.name.family, 'Kubota')
+    })
+    it('Zodiac should be sagittarius', function() {
+      assert.equal(punk6529M.zodiac, 'sagittarius')
+    })
+  })
+  const punk6529Alt = getPersonaNFT('0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB', 6529, 8)
+  describe('punk6529 on alternate chain (chainId: 8)', function(){
+    it('Success should be true', function() {
+      assert.equal(punk6529Alt.success, true)
+    })
+    it('Sex should be female', function() {
+      assert.equal(punk6529Alt.sex, 'female')
+    })
+    it('Given name should be Shihomi', function() {
+      assert.equal(punk6529Alt.name.given, 'Shihomi')
+    })
+    it('Family name should be Hoshino', function() {
+      assert.equal(punk6529Alt.name.family, 'Hoshino')
+    })
+    it('Zodiac should be libra', function() {
+      assert.equal(punk6529Alt.zodiac, 'libra')
+    })
+  })
+  const punk6529AltM = getPersonaNFT('0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB', 6529, 8, 'male')
+  describe('punk6529 on alternate chain (chainId: 8) with sex override (male)', function(){
+    it('Success should be true', function() {
+      assert.equal(punk6529AltM.success, true)
+    })
+    it('Sex should be male', function() {
+      assert.equal(punk6529AltM.sex, 'male')
+    })
+    it('Given name should be Masakatsu', function() {
+      assert.equal(punk6529AltM.name.given, 'Masakatsu')
+    })
+    it('Family name should be Hoshino', function() {
+      assert.equal(punk6529AltM.name.family, 'Hoshino')
+    })
+    it('Zodiac should be libra', function() {
+      assert.equal(punk6529AltM.zodiac, 'libra')
     })
   })
 })
