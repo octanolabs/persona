@@ -4,6 +4,17 @@ import zodiacs from './zodiacs'
 
 const ADDRESS = new RegExp(/^0x[0-9a-fA-F]{40}$/i)
 
+function getDNA(str) {
+  // hash the string, this will ensure minor differences in a given address/data
+  // will create major differences in the end result.
+  const keccak = bufferToHex(keccakFromHexString(str.toLowerCase()))
+  // strip '0x' prefix from keccack hash
+  const stripped = stripHexPrefix(keccak.toLowerCase())
+  // split hash into byte array
+  const split = stripped.match(/.{1,2}/g)
+  return split.entries()
+}
+
 export function getPersona(address) {
   // validate address
   if (!ADDRESS.test(address)) {
@@ -12,26 +23,18 @@ export function getPersona(address) {
       error: address + " is not a valid address"
     }
   }
-  // hash the address, this will ensure minor differences in a given address
-  // will create major differences in the end result.
-  const keccak = bufferToHex(keccakFromHexString(address.toLowerCase()))
-  // strip '0x' prefix from keccack hash
-  const stripped = stripHexPrefix(keccak.toLowerCase())
-  // split hash into byte array
-  const split = stripped.match(/.{1,2}/g)
+  
+  // generate dna from address
+  const dna = getDNA(address)
 
   // containers
   let sex = 0 // female
   let sum = new BN(0) // sum of all positions
   let even = new BN(0) // sum of even positions
   let odd = new BN(0) // sum of odd positions
-  let h1 = new BN(0) // sum of half 1 positions
-  let h2 = new BN(0) // sum of half 2 positions
-
-  const positions = split.entries()
 
   /* eslint-disable no-unused-vars */
-  for (const [index, hex] of positions) {
+  for (const [index, hex] of dna) {
     const value = new BN(hex, 16)
     sum = sum.add(value)
     if (index % 2) {
