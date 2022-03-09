@@ -1,6 +1,6 @@
 # Persona
 
-Returns a base persona (name, sex & zodiac) for a given ubiq or ethereum address.
+Returns a base persona (name, sex & zodiac) for a given bitcoin or ethereum style address.
 
 As an homage to Satoshi Nakamoto, all names (both given and family) are of a japanese origin.
 
@@ -52,7 +52,7 @@ Determined by odd or even state of summed hash: 'male' or 'female'
 
 one of the following
 
-```
+```javascript
 [
   'aquarius',
   'aries',
@@ -71,12 +71,12 @@ one of the following
 
 #### Error handling
 
-```
+```javascript
 import { getPersona } from '@octano/persona'
 const persona = getPersona('NOT_A_VALID_ADDRESS')
 ```
 
-```
+```javascript
 {
   success: false,
   error: 'NOT_A_VALID_ADDRESS is not a valid Ubiq/Ethereum address'

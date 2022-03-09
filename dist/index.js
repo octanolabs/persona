@@ -4,8 +4,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getPersona = getPersona;
+exports.getPersonaNFT = getPersonaNFT;
 
 var _ethereumjsUtil = require("ethereumjs-util");
+
+var _bitcoinAddressValidation = require("bitcoin-address-validation");
 
 var _names = _interopRequireDefault(require("./names"));
 
@@ -27,41 +30,54 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-var ADDRESS = new RegExp(/^0x[0-9a-fA-F]{40}$/i);
+var ETHADDRESS = new RegExp(/^0x[0-9a-fA-F]{40}$/i);
+var TOKENID = new RegExp(/[0-9]/i);
+var CHAINID = new RegExp(/[0-9]/i);
 
-function getPersona(address) {
-  // validate address
-  if (!ADDRESS.test(address)) {
-    return {
-      success: false,
-      error: address + " is not a valid address"
-    };
-  } // hash the address, this will ensure minor differences in a given address
+function validateAddress(address) {
+  // is eth style address?
+  if (!ETHADDRESS.test(address)) {
+    //nope. what about btc style?
+    if (!(0, _bitcoinAddressValidation.validate)(address)) {
+      // nope
+      return false;
+    }
+  } // is a valid address
+
+
+  return true;
+}
+
+function getDNA(str) {
+  var keccak = null; // hash the string, this will ensure minor differences in a given address/data
   // will create major differences in the end result.
 
+  if ((0, _ethereumjsUtil.isHexPrefixed)(str)) {
+    // is a plain address 
+    keccak = (0, _ethereumjsUtil.bufferToHex)((0, _ethereumjsUtil.keccakFromHexString)(str.toLowerCase()));
+  } else {
+    // is a seed string, e.g from getPersonaNFT or a bitcoin address
+    keccak = (0, _ethereumjsUtil.bufferToHex)((0, _ethereumjsUtil.keccakFromString)(str.toLowerCase()));
+  } // strip '0x' prefix from keccack hash
 
-  var keccak = (0, _ethereumjsUtil.bufferToHex)((0, _ethereumjsUtil.keccakFromHexString)(address.toLowerCase())); // strip '0x' prefix from keccack hash
 
   var stripped = (0, _ethereumjsUtil.stripHexPrefix)(keccak.toLowerCase()); // split hash into byte array
 
-  var split = stripped.match(/.{1,2}/g); // containers
+  var split = stripped.match(/.{1,2}/g);
+  return split.entries();
+}
 
-  var sex = 0; // female
-
+function dnaToPersona(dna, sex) {
+  // containers
   var sum = new _ethereumjsUtil.BN(0); // sum of all positions
 
   var even = new _ethereumjsUtil.BN(0); // sum of even positions
 
   var odd = new _ethereumjsUtil.BN(0); // sum of odd positions
 
-  var h1 = new _ethereumjsUtil.BN(0); // sum of half 1 positions
-
-  var h2 = new _ethereumjsUtil.BN(0); // sum of half 2 positions
-
-  var positions = split.entries();
   /* eslint-disable no-unused-vars */
 
-  var _iterator = _createForOfIteratorHelper(positions),
+  var _iterator = _createForOfIteratorHelper(dna),
       _step;
 
   try {
@@ -78,16 +94,20 @@ function getPersona(address) {
       } else {
         odd = odd.add(value);
       }
-    } // determine sex based on even/odd state off total sum
-
+    }
   } catch (err) {
     _iterator.e(err);
   } finally {
     _iterator.f();
   }
 
-  if (sum % 2) {
-    sex = 1; // male
+  if (!sex) {
+    // determine sex based on even/odd state off total sum
+    if (sum % 2) {
+      sex = 1; // male
+    } else {
+      sex = 0;
+    }
   } // determine zodiac
 
 
@@ -114,14 +134,78 @@ function getPersona(address) {
 
 
   return {
-    success: true,
     sex: sex === 0 ? 'female' : 'male',
     name: {
       given: given,
       family: family
     },
-    zodiac: zodiac,
-    version: 1 // in case we make breaking changes in future.
-
+    zodiac: zodiac
   };
+}
+
+function getPersona(address) {
+  // validate address
+  if (!validateAddress(address)) {
+    // 
+    return {
+      success: false,
+      error: address + " is not a valid bitcoin or ethereum style address"
+    };
+  } // generate dna from address
+
+
+  var dna = getDNA(address); // produce persona from dna
+
+  var persona = dnaToPersona(dna); // add extra values
+
+  persona.success = true;
+  persona.version = 1; // done
+
+  return persona;
+}
+
+function getPersonaNFT(contractAddress, tokenId, chainId, sex) {
+  // validate address
+  if (!ETHADDRESS.test(contractAddress)) {
+    return {
+      success: false,
+      error: address + " is not a valid contract address (/^0x[0-9a-fA-F]{40}$/i)"
+    };
+  } // validate tokenId
+
+
+  if (!TOKENID.test(tokenId)) {
+    return {
+      success: false,
+      error: tokenId + " is not a valid tokenId (/[0-9]/i)"
+    };
+  } // validate optional args if present
+
+
+  if (!CHAINID.test(chainId)) {
+    return {
+      success: false,
+      error: chainId + " is not a valid chainId (/[0-9]/i)"
+    };
+  } // validation optional sex override arg (if present)
+
+
+  if (sex) {
+    if (sex != 'male' && sex != 'female') {
+      return {
+        success: false,
+        error: sex + " is not a valid sex ('male' or 'female')"
+      };
+    }
+  }
+
+  var seed = "".concat(chainId, "-").concat(contractAddress, "-").concat(tokenId); // generate dna from address
+
+  var dna = getDNA(seed); // produce persona from dna
+
+  var persona = dnaToPersona(dna, sex); // add extra values
+
+  persona.success = true;
+  persona.version = 1;
+  return persona;
 }
