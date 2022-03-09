@@ -56,13 +56,49 @@ describe('getPersona', function() {
       assert.equal(persona3.zodiac, 'aries')
     })
   })
+  const persona4 = getPersona('bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4')
+  describe('bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4', function(){
+    it('Success should be true', function() {
+      assert.equal(persona4.success, true)
+    })
+    it('Sex should be female', function() {
+      assert.equal(persona4.sex, 'female')
+    })
+    it('Given name should be Esta', function() {
+      assert.equal(persona4.name.given, 'Esta')
+    })
+    it('Family name should be Sugiyama', function() {
+      assert.equal(persona4.name.family, 'Sugiyama')
+    })
+    it('Zodiac should be cancer', function() {
+      assert.equal(persona4.zodiac, 'cancer')
+    })
+  })
+  const persona5 = getPersona('36bJ4iqZbNevh9b9kzaMEkXb28Gpqrv2bd')
+  describe('36bJ4iqZbNevh9b9kzaMEkXb28Gpqrv2bd', function(){
+    it('Success should be true', function() {
+      assert.equal(persona5.success, true)
+    })
+    it('Sex should be female', function() {
+      assert.equal(persona5.sex, 'female')
+    })
+    it('Given name should be Kei', function() {
+      assert.equal(persona5.name.given, 'Kei')
+    })
+    it('Family name should be Ikegaya', function() {
+      assert.equal(persona5.name.family, 'Ikegaya')
+    })
+    it('Zodiac should be cancer', function() {
+      assert.equal(persona5.zodiac, 'cancer')
+    })
+  })
   const invalidPersona = getPersona('NOT_A_VALID_ADDRESS')
   describe('Invalid address', function(){
     it('Success should be false', function() {
       assert.equal(invalidPersona.success, false)
     })
     it('Error should be descriptive', function() {
-      assert.equal(invalidPersona.error, "NOT_A_VALID_ADDRESS is not a valid address")
+      assert.equal(invalidPersona.error, "NOT_A_VALID_ADDRESS is not a valid bitcoin or ethereum style address")
     })
   })
 })

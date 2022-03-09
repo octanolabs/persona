@@ -1,10 +1,24 @@
 import { bufferToHex, keccakFromHexString, keccakFromString, stripHexPrefix, isHexPrefixed, BN } from 'ethereumjs-util'
+import { validate } from 'bitcoin-address-validation';
 import names from './names'
 import zodiacs from './zodiacs'
 
-const ADDRESS = new RegExp(/^0x[0-9a-fA-F]{40}$/i)
+const ETHADDRESS = new RegExp(/^0x[0-9a-fA-F]{40}$/i)
 const TOKENID = new RegExp(/[0-9]/i)
 const CHAINID = new RegExp(/[0-9]/i)
+
+function validateAddress(address) {
+  // is eth style address?
+  if (!ETHADDRESS.test(address)) {
+    //nope. what about btc style?
+    if (!validate(address)) {
+      // nope
+      return false
+    }
+  }
+  // is a valid address
+  return true
+}
 
 function getDNA(str) {
   let keccak = null
@@ -14,7 +28,7 @@ function getDNA(str) {
     // is a plain address 
     keccak = bufferToHex(keccakFromHexString(str.toLowerCase()))
   } else {
-    // is a seed strong, e.g from getPersonaNFT
+    // is a seed string, e.g from getPersonaNFT or a bitcoin address
     keccak = bufferToHex(keccakFromString(str.toLowerCase()))
   }
   // strip '0x' prefix from keccack hash
@@ -85,10 +99,11 @@ function dnaToPersona(dna, sex) {
 
 export function getPersona(address) {
   // validate address
-  if (!ADDRESS.test(address)) {
+  if (!validateAddress(address)) {
+    // 
     return {
       success: false,
-      error: address + " is not a valid address"
+      error: address + " is not a valid bitcoin or ethereum style address"
     }
   }
   
@@ -107,7 +122,7 @@ export function getPersona(address) {
 
 export function getPersonaNFT(contractAddress, tokenId, chainId, sex) {
   // validate address
-  if (!ADDRESS.test(contractAddress)) {
+  if (!ETHADDRESS.test(contractAddress)) {
     return {
       success: false,
       error: address + " is not a valid contract address (/^0x[0-9a-fA-F]{40}$/i)"
